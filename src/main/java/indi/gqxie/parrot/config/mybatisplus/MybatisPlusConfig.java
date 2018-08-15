@@ -47,7 +47,7 @@ public class MybatisPlusConfig
 
     @Bean(name = "parrot")
     @ConfigurationProperties(prefix = "spring.datasource.druid.parrot")
-    public DataSource canalClientDB()
+    public DataSource parrotDB()
     {
         return DruidDataSourceBuilder.create().build();
     }
@@ -82,7 +82,7 @@ public class MybatisPlusConfig
     public SqlSessionFactory sqlSessionFactory() throws Exception
     {
         MybatisSqlSessionFactoryBean sqlSessionFactory = new MybatisSqlSessionFactoryBean();
-        sqlSessionFactory.setDataSource(multipleDataSource(canalClientDB(), testDB()));
+        sqlSessionFactory.setDataSource(multipleDataSource(parrotDB(), testDB()));
         //sqlSessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:/mapper/*/*Mapper.xml"));
 
         MybatisConfiguration configuration = new MybatisConfiguration();

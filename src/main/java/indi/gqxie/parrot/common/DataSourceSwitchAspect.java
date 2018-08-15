@@ -19,7 +19,7 @@ public class DataSourceSwitchAspect
 {
 
     @Pointcut("execution(* indi.gqxie.parrot.system.service.parrot..*.*(..))")
-    private void canalClientAspect()
+    private void parrotAspect()
     {
     }
 
@@ -28,7 +28,7 @@ public class DataSourceSwitchAspect
     {
     }
 
-    @Before("canalClientAspect()")
+    @Before("parrotAspect()")
     public void db1(JoinPoint joinPoint)
     {
         setDataSource(joinPoint, DBTypeEnum.PARROT);
