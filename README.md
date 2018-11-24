@@ -4,4 +4,4 @@
 [![GitHub issues](https://img.shields.io/github/issues/gqxie/parrot.svg?style=flat)](https://github.com/gqxie/parrot/issues) [![GitHub forks](https://img.shields.io/github/forks/gqxie/parrot.svg?style=flat)](https://github.com/gqxie/Dev/network) [![GitHub stars](https://img.shields.io/github/stars/gqxie/parrot.svg?style=flat)](https://github.com/gqxie/parrot/stargazers)
 
 ## 系统架构
-![parrot系统架构](http://oxhq7nx9p.bkt.clouddn.com/canal-clent.png)
+![parrot系统架构](https://github.com/gqxie/parrot/blob/master/canal-clent.png)
