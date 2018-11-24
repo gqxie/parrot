@@ -21,7 +21,7 @@ canal:
   server:
     address: 188.188.22.164
     port: 11111
-  instance.name: parrot
+  instance.name: chezhibao
   batch.size: 1000
 
 # zookeeper
@@ -38,7 +38,7 @@ spring:
   datasource:
     druid:
       parrot:
-        url: jdbc:mysql://188.188.22.160:33061/parrot?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+        url: jdbc:mysql://188.188.22.160:33061/canal_client?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
         username: root
         password: mychebao
         driver-class-name: com.mysql.jdbc.Driver
