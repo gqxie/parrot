@@ -19,13 +19,13 @@ rocket:
 # canal
 canal:
   server:
-    address: 188.188.22.164
+    address: localhost
     port: 11111
-  instance.name: chezhibao
+  instance.name: password
   batch.size: 1000
 
 # zookeeper
-zk.quorum: 188.188.22.166:2181,188.188.22.165:2181,188.188.22.164:2181
+zk.quorum: localhost:2181,localhost2:2181,localhost3:2181
 zk.session.timeout: 20000
 
 # logback
@@ -38,17 +38,17 @@ spring:
   datasource:
     druid:
       parrot:
-        url: jdbc:mysql://188.188.22.160:33061/canal_client?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+        url: jdbc:mysql://localhost:33061/canal_client?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
         username: root
-        password: mychebao
+        password: password
         driver-class-name: com.mysql.jdbc.Driver
         initialSize: 5
         minIdle: 5
         maxActive: 20
       test:
-        url: jdbc:mysql://188.188.22.160:33061/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+        url: jdbc:mysql://localhost:33061/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
         username: root
-        password: mychebao
+        password: password
         driver-class-name: com.mysql.jdbc.Driver
         initialSize: 5
         minIdle: 5
